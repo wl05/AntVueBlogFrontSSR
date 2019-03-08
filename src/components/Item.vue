@@ -41,7 +41,7 @@ export default {
     name: 'news-item',
     props: ['item'],
     // http://ssr.vuejs.org/en/caching.html#component-level-caching
-    serverCacheKey: ({ item: { id, __lastUpdated, time }}) => {
+    serverCacheKey: ({ item: { id, __lastUpdated, time } }) => {
         return `${id}::${__lastUpdated}::${timeAgo(time)}`
     },
 }
@@ -49,11 +49,12 @@ export default {
 
 <style lang="stylus">
 .news-item
-  background-color #fff
+  /*background-color #fff*/
   padding 20px 30px 20px 80px
   border-bottom 1px solid #eee
   position relative
   line-height 20px
+  /*width 100%*/
   .score
     color #ff6600
     font-size 1.1em

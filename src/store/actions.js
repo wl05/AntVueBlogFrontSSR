@@ -31,7 +31,9 @@ export default {
             return false
         })
         if (_ids.length) {
-            return fetchItems(_ids).then(items => commit('SET_ITEMS', { items }))
+            return fetchItems(_ids).then(items =>
+                commit('SET_ITEMS', { items }),
+            )
         } else {
             return Promise.resolve()
         }

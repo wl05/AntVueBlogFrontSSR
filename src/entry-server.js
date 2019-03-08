@@ -14,7 +14,6 @@ export default context => {
 
         const { url } = context
         const { fullPath } = router.resolve(url).route
-
         if (fullPath !== url) {
             return reject({ url: fullPath })
         }
@@ -34,14 +33,15 @@ export default context => {
             // which is resolved when the action is complete and store state has been
             // updated.
             Promise.all(
-                matchedComponents.map(
-                    ({ asyncData }) =>
+                matchedComponents.map(({ asyncData }) => {
+                    return (
                         asyncData &&
                         asyncData({
                             store,
                             route: router.currentRoute,
-                        }),
-                ),
+                        })
+                    )
+                }),
             )
                 .then(() => {
                     isDev && console.log(`data pre-fetch: ${Date.now() - s}ms`)

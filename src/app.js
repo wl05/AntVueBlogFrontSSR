@@ -5,6 +5,12 @@ import { createRouter } from './router'
 import { sync } from 'vuex-router-sync'
 import titleMixin from './util/title'
 import * as filters from './util/filters'
+// import ElementUI from 'element-ui'
+import { Button, Input, Pagination } from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(Button)
+Vue.use(Input)
+Vue.use(Pagination)
 
 // mixin for handling title
 Vue.mixin(titleMixin)

@@ -20,8 +20,8 @@ export function createAPI({ config, version }) {
         })
 
         // cache the latest story ids
-        api.cachedIds = {};
-        ['top', 'new', 'show', 'ask', 'job'].forEach(type => {
+        api.cachedIds = {}
+        ;['top', 'new', 'show', 'ask', 'job'].forEach(type => {
             api.child(`${type}stories`).on('value', snapshot => {
                 api.cachedIds[type] = snapshot.val()
             })
