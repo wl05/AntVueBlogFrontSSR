@@ -1,8 +1,6 @@
-# ant-vue-ssr-demo
+# AntVueBlogFrontSSR
 
-HackerNews clone built with Vue 2.0 + vue-router + vuex, with server-side rendering.
-
-根据[vue-hackernews-2.0](https://github.com/vuejs/vue-hackernews-2.0)搭建的SSR模版，加了eslint的配置
+根据[vue-hackernews-2.0](https://github.com/vuejs/vue-hackernews-2.0)重写[AntVueBlogFront](https://github.com/antbaobao/AntVueBlogFront),实现SSR服务端渲染，优化SEO。
 
 
 ## Build Setup
