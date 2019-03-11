@@ -32,9 +32,9 @@ export default {
 .newest-articles
     margin-top 45px
     padding 20px
-    border-radius 10px
+    border-radius 5px
     border 1px solid transparent
-    box-shadow: 0px 1px 3px #888;
+    box-shadow: 0px 1px 3px #888
     .newest-articles__title
         font-size 20px
     .newest-articles__items-container
@@ -47,4 +47,7 @@ export default {
             font-size 0.9em
         .newest-articles__item:hover
             cursor pointer
+@media (max-width: 960px)
+    .newest-articles
+        box-shadow none
 </style>

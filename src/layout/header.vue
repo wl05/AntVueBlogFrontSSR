@@ -13,41 +13,28 @@
                 <!--&gt;</el-input>-->
             </nav>
         </header>
-        <hr/>
     </div>
 </template>
 <script>
-export default {
-    data() {
-        return {
-            input: '',
-        }
-    },
-}
 </script>
 <style lang="stylus">
 .header
-    height 55px
-    /*border-bottom 1px solid #eee*/
-    padding-left 80px
+    height 80px
+    padding-left 50px
     .header__inner
         box-sizing border-box
         margin 0px auto
-        padding 15px 5px
+        text-shadow -2px 2px 3px #888, 2px 2px 10px #fff
+        color #000
+        height 80px
+        line-height 80px
     a
-        font-size 24px
-        line-height 24px
+        font-size 30px
+        line-height 30px
         transition color .15s ease
         display inline-block
         vertical-align middle
-        /*font-weight 300*/
         letter-spacing .075em
-        margin-right 1.8em
-        &:hover
-            /*color #fff*/
-        &.router-link-active
-            /*color #fff*/
-            /*font-weight 300*/
         &:nth-child(6)
             margin-right 0
 .header__logo
@@ -73,13 +60,10 @@ export default {
     background-color transparent
     border 1px solid #eee
 @media (max-width 860px)
-    .header .header__inner
-        padding 15px 30px
-
-@media (max-width 600px)
     .header
+        padding-left 0
         .header__inner
-            padding 15px
-        a
-            margin-right 1em
+            display flex
+            justify-content center
+            align-items center
 </style>

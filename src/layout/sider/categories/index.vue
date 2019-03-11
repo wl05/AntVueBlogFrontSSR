@@ -28,7 +28,7 @@ export default {
 .categories
     margin-top 45px
     padding 20px
-    border-radius 10px
+    border-radius 5px
     border 1px solid transparent
     box-shadow: 0px 1px 3px #888;
     .categories__title
@@ -50,4 +50,7 @@ export default {
     content ''
     display block
     clear both
+@media (max-width: 960px)
+    .categories
+        box-shadow none
 </style>

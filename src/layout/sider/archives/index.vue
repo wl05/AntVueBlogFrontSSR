@@ -33,11 +33,10 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .archives
-    margin-top 45px
     padding 20px
-    border-radius 10px
+    border-radius 5px
     border 1px solid transparent
-    box-shadow: 0px 1px 3px #888;
+    box-shadow 0px 1px 3px #888
     .archives__title
         font-size 20px
     .archives__items-container
@@ -50,6 +49,12 @@ export default {
             color: #828282
             font-size: 0.9em
             padding 5px 0
+@media (max-width 1600px)
+    .archives
+        margin-top 45px
+@media (max-width: 960px)
+    .archives
+        box-shadow none
 .archives:after
     content ''
     display block

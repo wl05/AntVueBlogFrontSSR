@@ -28,17 +28,19 @@ export default {
 .pagination
     .article-list__el-pagination .el-pager .number
         background-color transparent
-        border 1px solid #eee
+        border 1px solid transparent
+        box-shadow 0px 1px 3px #888
         color inherit
         font-weight 300
     .article-list__el-pagination .el-pager .more
         background-color transparent
-        border 1px solid #eee
+        border 1px solid transparent
+        box-shadow 0px 1px 3px #888
         color inherit
         font-weight 300
     .el-pagination.is-background .el-pager li:not(.disabled).active {
-        background-color: #eee;
-        color: inherit;
+        background-color transparent
+        color: white
     }
     .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev
         background-color transparent
@@ -47,5 +49,6 @@ export default {
     .el-pagination.is-background .el-pager li:not(.disabled):hover
         color: #eee
     .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev
-        border 1px solid #eee
+        border 1px solid transparent
+        box-shadow 0px 1px 3px #888
 </style>

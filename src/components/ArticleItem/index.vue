@@ -32,14 +32,14 @@ export default {
 
 <style lang="stylus">
     .article-item
-        padding 20px 30px 20px 80px
-        /*border-bottom 1px solid #eee*/
+        padding 20px 0px 20px 0px
+        margin 0 20px 0 40px
         position relative
         line-height 20px
-        list-style-type none
+        list-style-type square
         .article-item__title
             a
-                color: #000
+                color: #34495e
                 text-decoration: none
                 cursor pointer
                 font-size 18px
@@ -52,4 +52,11 @@ export default {
         .article-item__category
             margin-right 10px
             cursor pointer
+    @media (max-width: 960px)
+        .article-item
+            margin 0
+            display flex
+            flex-direction column
+            /*justify-content center*/
+            align-items center
 </style>
