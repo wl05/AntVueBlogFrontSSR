@@ -6,24 +6,24 @@
     "alipay.png?c02309bcf4fe8c30af428f1dba578d76",
     "weixin.png?8c285cca0449d546aab091d0a2a2d30c",
     "0.5380f45b99547586f12b.js",
-    "1.692021e1b476241be454.js",
+    "1.1e506a02271400d5343e.js",
     "fonts/element-icons.6f0a763.ttf",
     "3.e513a66ace9c97922547.js",
     "vendor.eeb92db4fe1a30cb68de.js",
-    "app.b9dd426c1974dea449db.js",
-    "manifest.728ee251a2527511c9d7.js",
-    "common.b9dd426c1974dea449db.css"
+    "app.26a431afad74c96eed82.js",
+    "manifest.136a8856ab03e4b624eb.js",
+    "common.26a431afad74c96eed82.css"
   ],
   "initial": [
-    "manifest.728ee251a2527511c9d7.js",
+    "manifest.136a8856ab03e4b624eb.js",
     "vendor.eeb92db4fe1a30cb68de.js",
-    "app.b9dd426c1974dea449db.js",
-    "common.b9dd426c1974dea449db.css"
+    "app.26a431afad74c96eed82.js",
+    "common.26a431afad74c96eed82.css"
   ],
   "async": [
     "2.8584521b2609a5985e85.js",
     "0.5380f45b99547586f12b.js",
-    "1.692021e1b476241be454.js",
+    "1.1e506a02271400d5343e.js",
     "3.e513a66ace9c97922547.js"
   ],
   "modules": {
