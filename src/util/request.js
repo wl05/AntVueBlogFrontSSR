@@ -7,6 +7,8 @@ const HTTP_HEADER = {
 }
 
 const GATEWAY = 'http://120.77.219.106:7001'
+// const GATEWAY = 'http://127.0.0.1:7001'
+
 class _request {
     async get(url, params) {
         const _url = params
@@ -16,17 +18,6 @@ class _request {
             url: `${GATEWAY}${_url}`,
             method: 'get',
             headers: HTTP_HEADER,
-        }
-        const result = await axios(config)
-        return result
-    }
-
-    async post(url, params) {
-        let config = {
-            method: 'post',
-            url: GATEWAY + url,
-            headers: HTTP_HEADER,
-            data: JSON.stringify(params),
         }
         const result = await axios(config)
         return result

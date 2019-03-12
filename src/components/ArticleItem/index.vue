@@ -9,8 +9,8 @@
             </span>
             <a
                 class="article-item__category"
-               @click="$router.push({ path: `/category/${item.category._id}` })"
-            >分类: {{ item.category.name }}</a
+               @click="$router.push({ path: `/category/${item.category_detail._id}` })"
+            >分类: {{ item.category_detail.name }}</a
             >
             <span>阅读{{ item.viewCount }}次</span>
         </div>

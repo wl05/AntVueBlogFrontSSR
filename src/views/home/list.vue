@@ -25,7 +25,7 @@ import Pagination from '@/components/Pagination'
 
 export default {
     asyncData({ store }) {
-        return store.dispatch('FETCH_ARTICLE', { pageSize: 1, pageLimit: 20 })
+        return store.dispatch('FETCH_ARTICLE', { pageSize: 1, pageLimit: 10 })
     },
     name: 'article-list',
     components: { ArticleItem, Pagination },
@@ -52,7 +52,7 @@ export default {
         },
     },
     methods: {
-        fetchArticle(to = this.page, from = this.from) {
+        fetchArticle(to = this.pageSize, from = this.from) {
             this.$bar.start()
             this.$store
                 .dispatch('FETCH_ARTICLE', {
