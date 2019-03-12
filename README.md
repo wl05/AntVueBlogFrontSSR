@@ -1,7 +1,7 @@
 # AntVueBlogFrontSSR
 
 根据[vue-hackernews-2.0](https://github.com/vuejs/vue-hackernews-2.0)重写[AntVueBlogFront](https://github.com/antbaobao/AntVueBlogFront),实现SSR服务端渲染，优化SEO。
-
+[博客地址](http://120.77.219.106:8080/)
 
 ## Build Setup
 
