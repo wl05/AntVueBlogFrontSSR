@@ -25,7 +25,7 @@ import Pagination from '@/components/Pagination'
 
 export default {
     asyncData({ store }) {
-        return store.dispatch('FETCH_ARTICLE', { pageSize: 1, pageLimit: 10 })
+        return store.dispatch('FETCH_ARTICLE', { pageSize: 1, pageLimit: 15 })
     },
     name: 'article-list',
     components: { ArticleItem, Pagination },
@@ -61,10 +61,10 @@ export default {
                 })
                 .then(() => {
                     this.transition =
-                        from === -1
-                            ? null
-                            : to > from ? 'slide-left'
-                            : 'slide-right'
+                            from === -1
+                                ? null
+                                : to > from ? 'slide-left'
+                                : 'slide-right'
                     this.$store.commit('SAVE_FROM', to)
                     this.$bar.finish()
                 })
@@ -73,49 +73,49 @@ export default {
 }
 </script>
 <style lang="stylus">
-.article-list
-    margin-top 20px
-    margin-bottom 20px
+    .article-list
+        margin-top 20px
+        margin-bottom 20px
 
-.article-list__items-container
-    margin 30px 0
-    width 100%
-    transition all .5s cubic-bezier(.55, 0, .1, 1)
-    ul
-        list-style-type none
-        padding 0
-        margin 0
+    .article-list__items-container
+        margin 30px 0
+        width 100%
+        transition all .5s cubic-bezier(.55, 0, .1, 1)
+        ul
+            list-style-type none
+            padding 0
+            margin 0
 
-.el-pagination.article-list__el-pagination
-    display flex
-    justify-content center
+    .el-pagination.article-list__el-pagination
+        display flex
+        justify-content center
 
-.article-list__items-container
-    margin 30px 0
-    width 100%
-    transition all .5s cubic-bezier(.55, 0, .1, 1)
-    ul
-        list-style-type none
-        padding 0
-        margin 0
+    .article-list__items-container
+        margin 30px 0
+        width 100%
+        transition all .5s cubic-bezier(.55, 0, .1, 1)
+        ul
+            list-style-type none
+            padding 0
+            margin 0
 
-.slide-left-enter, .slide-right-leave-to
-    opacity 0
-    transform translate(30px, 0)
+    .slide-left-enter, .slide-right-leave-to
+        opacity 0
+        transform translate(30px, 0)
 
-.slide-left-leave-to, .slide-right-enter
-    opacity 0
-    transform translate(-30px, 0)
+    .slide-left-leave-to, .slide-right-enter
+        opacity 0
+        transform translate(-30px, 0)
 
-.item-move, .item-enter-active, .item-leave-active
-    transition all .5s cubic-bezier(.55, 0, .1, 1)
+    .item-move, .item-enter-active, .item-leave-active
+        transition all .5s cubic-bezier(.55, 0, .1, 1)
 
-.item-enter
-    opacity 0
-    transform translate(30px, 0)
+    .item-enter
+        opacity 0
+        transform translate(30px, 0)
 
-.item-leave-active
-    position absolute
-    opacity 0
-    transform translate(30px, 0)
+    .item-leave-active
+        position absolute
+        opacity 0
+        transform translate(30px, 0)
 </style>

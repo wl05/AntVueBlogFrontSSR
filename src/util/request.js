@@ -1,6 +1,6 @@
 import axios from 'axios'
 import queryString from 'query-string'
-axios.defaults.timeout = 6000
+axios.defaults.timeout = 10000
 
 const HTTP_HEADER = {
     'Content-Type': 'application/json',
