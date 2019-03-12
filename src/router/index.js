@@ -18,6 +18,6 @@ export function createRouter() {
             { path: '/article/detail/:id', component: ArticleDetail },
             { path: '/category/:category', component: Categories },
             { path: '/archive/:timeline', component: Archives }
-        ],
+        ]
     })
 }
