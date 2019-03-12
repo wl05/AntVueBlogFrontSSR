@@ -21,3 +21,8 @@ npm run build
 npm start
 ```
 
+## Deploy
+
+```bash
+pm2 start npm --name "ant-blog" -- start
+```
